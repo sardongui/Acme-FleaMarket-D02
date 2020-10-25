@@ -30,5 +30,23 @@
 		<property name="description" value="Donde las críticas constructivas, brillan por su ausencia."/>
 		<property name="moment" value="2020/10/22 17:30"/>
 	</bean>
+	
+	<bean id="Figment01" class="acme.entities.figments.Figment">
+		<property name="title" value="Figment 1" />
+		<property name="creationMoment" value="2020/10/22 11:00" />
+		<property name="description" value="This is a description 1" />
+		<property name="nameInventor" value="Sara"/>
+		<property name="minMoney" value="30.0€" />
+		<property name="maxMoney" value="70.0€" />
+	</bean>
+	
+	<bean id="Figment02" class="acme.entities.figments.Figment">
+		<property name="title" value="Figment 2" />
+		<property name="creationMoment" value="2020/10/10 21:00" />
+		<property name="description" value="This is a description 2" />
+		<property name="nameInventor" value="Raquel"/>
+		<property name="minMoney" value="10.0€" />
+		<property name="maxMoney" value="20.0€" />
+	</bean>
 
 </beans>
