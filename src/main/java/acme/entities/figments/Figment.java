@@ -5,10 +5,13 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.validation.Valid;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
+import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -32,8 +35,13 @@ public class Figment extends DomainEntity{
 	private String				nameInventor;
 	
 	@NotBlank
-	private String				text;
+	private String				description;
 	
-	@NotBlank
-	private Double				price;
+	@Valid
+	@NotNull
+	private Money				minMoney;
+
+	@Valid
+	@NotNull
+	private Money				maxMoney;
 }
