@@ -84,6 +84,17 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `tool_sheet` (
+       `id` integer not null,
+        `version` integer not null,
+        `description` varchar(255),
+        `provider_home_page` varchar(255),
+        `provider_name` varchar(255),
+        `rating` integer,
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `user_account` (
        `id` integer not null,
         `version` integer not null,
