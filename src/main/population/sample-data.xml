@@ -30,5 +30,45 @@
 		<property name="description" value="Donde las críticas constructivas, brillan por su ausencia."/>
 		<property name="moment" value="2020/10/22 17:30"/>
 	</bean>
+	
+	<!-- News -->
+	<bean id="new01" class="acme.entities.news.New">
+		<property name="category" value="Categoria-1"/>
+		<property name="picture" value="https://png.pngtree.com/png-vector/20200529/ourmid/pngtree-breaking-news-lower-third-banner-design-png-image_2215460.jpg"/>
+		<property name="title" value="Ejemplo1"/>
+		<property name="moment" value="2020/10/25 10:21"/>
+		<property name="deadline" value="2020/11/20 23:00"/>
+		<property name="body" value="Esto es una noticia de ejemplo (1)"/>
+		<property name="relatedNews">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="new02" class="acme.entities.news.New">
+		<property name="category" value="Categoria-1"/>
+		<property name="picture" value="https://png.pngtree.com/png-vector/20200529/ourmid/pngtree-breaking-news-lower-third-banner-design-png-image_2215460.jpg"/>
+		<property name="title" value="Ejemplo2"/>
+		<property name="moment" value="2020/10/25 10:25"/>
+		<property name="deadline" value="2020/11/20 23:00"/>
+		<property name="body" value="Esto es una noticia de ejemplo (2)"/>
+		<property name="relatedNews">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="new03" class="acme.entities.news.New">
+		<property name="category" value="Categoria-2"/>
+		<property name="picture" value="https://png.pngtree.com/png-vector/20200529/ourmid/pngtree-breaking-news-lower-third-banner-design-png-image_2215460.jpg"/>
+		<property name="title" value="Ejemplo3"/>
+		<property name="moment" value="2020/10/25 12:00"/>
+		<property name="deadline" value="2020/11/20 23:00"/>
+		<property name="body" value="Esto es una noticia de ejemplo (3)"/>
+		<property name="relatedNews">
+			<list>
+			</list>
+		</property>
+	</bean>
 
 </beans>

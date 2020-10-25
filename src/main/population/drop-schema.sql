@@ -15,6 +15,10 @@
        drop 
        foreign key FK_6cyha9f1wpj0dpbxrrjddrqed;
 
+    alter table `new_related_news` 
+       drop 
+       foreign key `FKekvcmka1939ggq2mk62n8khap`;
+
     alter table `provider` 
        drop 
        foreign key FK_b1gwnjqm6ggy9yuiqm0o4rlmd;
@@ -30,6 +34,10 @@
     drop table if exists `donaire_bulletin`;
 
     drop table if exists `martinez_bulletin`;
+
+    drop table if exists `new`;
+
+    drop table if exists `new_related_news`;
 
     drop table if exists `provider`;
 

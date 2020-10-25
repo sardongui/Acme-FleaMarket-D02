@@ -47,6 +47,23 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `new` (
+       `id` integer not null,
+        `version` integer not null,
+        `body` varchar(255),
+        `category` varchar(255),
+        `deadline` datetime(6),
+        `moment` datetime(6),
+        `picture` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `new_related_news` (
+       `new_id` integer not null,
+        `related_news` varchar(255)
+    ) engine=InnoDB;
+
     create table `provider` (
        `id` integer not null,
         `version` integer not null,
@@ -96,6 +113,11 @@
        add constraint FK_6cyha9f1wpj0dpbxrrjddrqed 
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
+
+    alter table `new_related_news` 
+       add constraint `FKekvcmka1939ggq2mk62n8khap` 
+       foreign key (`new_id`) 
+       references `new` (`id`);
 
     alter table `provider` 
        add constraint FK_b1gwnjqm6ggy9yuiqm0o4rlmd 
