@@ -39,4 +39,111 @@
 	</bean>
 	
 
+	<bean id="Figment01" class="acme.entities.figments.Figment">
+		<property name="title" value="Figment 1" />
+		<property name="creationMoment" value="2020/10/22 11:00" />
+		<property name="description" value="This is a description 1" />
+		<property name="nameInventor" value="Sara"/>
+		<property name="minMoney" value="30.0€" />
+		<property name="maxMoney" value="70.0€" />
+	</bean>
+	
+	<bean id="Figment02" class="acme.entities.figments.Figment">
+		<property name="title" value="Figment 2" />
+		<property name="creationMoment" value="2020/10/10 21:00" />
+		<property name="description" value="This is a description 2" />
+		<property name="nameInventor" value="Raquel"/>
+		<property name="minMoney" value="10.0€" />
+		<property name="maxMoney" value="20.0€" />
+
+	<!-- News -->
+	<bean id="new01" class="acme.entities.news.New">
+		<property name="category" value="Categoria-1"/>
+		<property name="picture" value="https://png.pngtree.com/png-vector/20200529/ourmid/pngtree-breaking-news-lower-third-banner-design-png-image_2215460.jpg"/>
+		<property name="title" value="Ejemplo1"/>
+		<property name="moment" value="2020/10/25 10:21"/>
+		<property name="deadline" value="2020/11/20 23:00"/>
+		<property name="body" value="Esto es una noticia de ejemplo (1)"/>
+		<property name="relatedNews">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="new02" class="acme.entities.news.New">
+		<property name="category" value="Categoria-1"/>
+		<property name="picture" value="https://png.pngtree.com/png-vector/20200529/ourmid/pngtree-breaking-news-lower-third-banner-design-png-image_2215460.jpg"/>
+		<property name="title" value="Ejemplo2"/>
+		<property name="moment" value="2020/10/25 10:25"/>
+		<property name="deadline" value="2020/11/20 23:00"/>
+		<property name="body" value="Esto es una noticia de ejemplo (2)"/>
+		<property name="relatedNews">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="new03" class="acme.entities.news.New">
+		<property name="category" value="Categoria-2"/>
+		<property name="picture" value="https://png.pngtree.com/png-vector/20200529/ourmid/pngtree-breaking-news-lower-third-banner-design-png-image_2215460.jpg"/>
+		<property name="title" value="Ejemplo3"/>
+		<property name="moment" value="2020/10/25 12:00"/>
+		<property name="deadline" value="2020/11/20 23:00"/>
+		<property name="body" value="Esto es una noticia de ejemplo (3)"/>
+		<property name="relatedNews">
+			<list>
+			</list>
+		</property>
+	</bean>
+	
+	<!-- Material Sheets -->
+	<bean id="materialSheet01" class="acme.entities.materialSheets.MaterialSheet">
+		<property name="title" value="Material Sheet 1"/>
+		<property name="description" value="Esto es una hoja de inventario de ejemplo (1)"/>
+		<property name="providerName" value="Provider 1"/>
+		<property name="providerHomePage" value="https://www.provider1.com"/>
+		<property name="rating" value="3"/>
+	</bean>
+	
+	<bean id="materialSheet02" class="acme.entities.materialSheets.MaterialSheet">
+		<property name="title" value="Material Sheet 2"/>
+		<property name="description" value="Esto es una hoja de inventario de ejemplo (2)"/>
+		<property name="providerName" value="Provider 1"/>
+		<property name="providerHomePage" value="https://www.provider1.com"/>
+		<property name="rating" value="1"/>
+	</bean>
+	
+	<bean id="materialSheet03" class="acme.entities.materialSheets.MaterialSheet">
+		<property name="title" value="Material Sheet 3"/>
+		<property name="description" value="Esto es una hoja de inventario de ejemplo (3)"/>
+		<property name="providerName" value="Provider 2"/>
+		<property name="providerHomePage" value="https://www.provider2.com"/>
+		<property name="rating" value="5"/>
+	</bean>
+	
+	<!--Tool Sheets -->
+	<bean id="toolSheet01" class="acme.entities.toolSheets.ToolSheet">
+		<property name="title" value="Tool Sheet 1"/>
+		<property name="description" value="Esto es una hoja de herramientas de ejemplo (1)"/>
+		<property name="providerName" value="Provider 3"/>
+		<property name="providerHomePage" value="https://www.provider3.com"/>
+		<property name="rating" value="4"/>
+	</bean>
+	
+	<bean id="toolSheet02" class="acme.entities.toolSheets.ToolSheet">
+		<property name="title" value="Tool Sheet 2"/>
+		<property name="description" value="Esto es una hoja de herramientas de ejemplo (2)"/>
+		<property name="providerName" value="Provider 4"/>
+		<property name="providerHomePage" value="https://www.provider4.com"/>
+		<property name="rating" value="2"/>
+	</bean>
+	
+	<bean id="toolSheet03" class="acme.entities.toolSheets.ToolSheet">
+		<property name="title" value="Tool Sheet 3"/>
+		<property name="description" value="Esto es una hoja de herramientas de ejemplo (3)"/>
+		<property name="providerName" value="Provider 4"/>
+		<property name="providerHomePage" value="https://www.provider4.com"/>
+		<property name="rating" value="2"/>
+	</bean>
+
 </beans>

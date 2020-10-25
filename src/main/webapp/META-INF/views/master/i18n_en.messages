@@ -44,6 +44,8 @@ master.menu.anonymous.create-martinez-bulletin = Publish in Martinez's bulletin
 
 master.menu.authenticated = Authenticated
 master.menu.authenticated.list-suggestion = List of suggestion
+master.menu.authenticated.list-figment = List of figments
+
 
 # master.menu.administrator ###################################################
 

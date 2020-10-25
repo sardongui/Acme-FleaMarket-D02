@@ -1,4 +1,5 @@
 
+
     alter table `administrator` 
        drop 
        foreign key FK_2a5vcjo3stlfcwadosjfq49l1;
@@ -18,6 +19,11 @@
     alter table `provider` 
        drop 
        foreign key FK_b1gwnjqm6ggy9yuiqm0o4rlmd;
+ 
+       
+    alter table `new_related_news` 
+       drop 
+       foreign key `FKekvcmka1939ggq2mk62n8khap`;
 
     drop table if exists `administrator`;
 
@@ -29,6 +35,8 @@
 
     drop table if exists `donaire_bulletin`;
 
+    drop table if exists `figment`;
+
     drop table if exists `martinez_bulletin`;
 
     drop table if exists `provider`;
@@ -36,3 +44,11 @@
     drop table if exists `user_account`;
 
     drop table if exists `hibernate_sequence`;
+
+    drop table if exists `material_sheet`;
+
+    drop table if exists `new`;
+
+    drop table if exists `new_related_news`;
+
+    drop table if exists `tool_sheet`;
