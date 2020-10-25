@@ -27,8 +27,11 @@
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.anonymous.list-martinez-bulletin" action="/anonymous/martinez-bulletin/list" />
 			<acme:menu-suboption code="master.menu.anonymous.create-martinez-bulletin" action="/anonymous/martinez-bulletin/create" />
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.anonymous.list-advertisement" action="/anonymous/advertisement/list"/>
 			
 		</acme:menu-option>
+
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>

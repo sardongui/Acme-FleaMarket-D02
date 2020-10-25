@@ -9,6 +9,8 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
+import org.hibernate.validator.constraints.URL;
+
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -24,6 +26,7 @@ public class Advertisement extends DomainEntity{
 	@NotEmpty
 	private String				title;
 
+	@URL
 	@NotEmpty
 	private String				picture;
 
@@ -39,17 +42,17 @@ public class Advertisement extends DomainEntity{
 	@NotEmpty
 	private String				text;
 	
+	@NotEmpty
+	private String				discounts;
+	
 	//@NotEmpty
-	//private String				discounts;
+	//private String smallDiscount;
 	
-	@NotEmpty
-	private String smallDiscount;
+	//@NotEmpty
+	//private String averageDiscount;
 	
-	@NotEmpty
-	private String averageDiscount;
-	
-	@NotEmpty
-	private String largeDiscount;
+	//@NotEmpty
+	//private String largeDiscount;
 	
 
 }
