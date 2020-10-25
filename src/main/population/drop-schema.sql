@@ -35,6 +35,8 @@
 
     drop table if exists `martinez_bulletin`;
 
+    drop table if exists `material_sheet`;
+
     drop table if exists `new`;
 
     drop table if exists `new_related_news`;

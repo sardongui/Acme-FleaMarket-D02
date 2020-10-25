@@ -70,5 +70,30 @@
 			</list>
 		</property>
 	</bean>
+	
+	<!-- Material Sheets -->
+	<bean id="materialSheet01" class="acme.entities.materialSheets.MaterialSheet">
+		<property name="title" value="Material Sheet 1"/>
+		<property name="description" value="Esto es una hoja de inventario de ejemplo (1)"/>
+		<property name="providerName" value="Provider 1"/>
+		<property name="providerHomePage" value="https://www.provider1.com"/>
+		<property name="rating" value="3"/>
+	</bean>
+	
+	<bean id="materialSheet02" class="acme.entities.materialSheets.MaterialSheet">
+		<property name="title" value="Material Sheet 2"/>
+		<property name="description" value="Esto es una hoja de inventario de ejemplo (2)"/>
+		<property name="providerName" value="Provider 1"/>
+		<property name="providerHomePage" value="https://www.provider1.com"/>
+		<property name="rating" value="1"/>
+	</bean>
+	
+	<bean id="materialSheet03" class="acme.entities.materialSheets.MaterialSheet">
+		<property name="title" value="Material Sheet 3"/>
+		<property name="description" value="Esto es una hoja de inventario de ejemplo (3)"/>
+		<property name="providerName" value="Provider 2"/>
+		<property name="providerHomePage" value="https://www.provider2.com"/>
+		<property name="rating" value="5"/>
+	</bean>
 
 </beans>
