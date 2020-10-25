@@ -31,10 +31,13 @@ master.menu.sign-out = Salir
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 
-master.menu.authenticated #######################################################
+
+# master.menu.authenticated ###################################################
 
 master.menu.authenticated = Autenticado
+master.menu.authenticated.list-suggestion = Lista de sugerencias
 master.menu.authenticated.list-figment = Lista de productos
+
 
 # master.menu.administrator ###################################################
 

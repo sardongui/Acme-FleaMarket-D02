@@ -30,6 +30,14 @@
 		<property name="description" value="Donde las críticas constructivas, brillan por su ausencia."/>
 		<property name="moment" value="2020/10/22 17:30"/>
 	</bean>
+	<!-- Suggestion -->
+	<bean id="Suggestion01" class="acme.entities.suggestions.Suggestion">
+		<property name="title" value="Suggestion 01"/>
+		<property name="description" value="Podemos hacerte una sugerencia si lo desea."/>
+		<property name="creationMoment" value="2020/10/22 17:30"/>
+		<property name="email" value="sardongui@us.es"/>
+	</bean>
+	
 
 	<bean id="Figment01" class="acme.entities.figments.Figment">
 		<property name="title" value="Figment 1" />
