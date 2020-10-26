@@ -30,7 +30,8 @@
 		<property name="description" value="Donde las críticas constructivas, brillan por su ausencia."/>
 		<property name="moment" value="2020/10/22 17:30"/>
 	</bean>
-	<!-- Suggestion -->
+	
+	<!-- Suggestions -->
 	<bean id="Suggestion01" class="acme.entities.suggestions.Suggestion">
 		<property name="title" value="Suggestion 01"/>
 		<property name="description" value="Podemos hacerte una sugerencia si lo desea."/>
@@ -38,7 +39,7 @@
 		<property name="email" value="sardongui@us.es"/>
 	</bean>
 	
-
+	<!-- Figments -->
 	<bean id="Figment01" class="acme.entities.figments.Figment">
 		<property name="title" value="Figment 1" />
 		<property name="creationMoment" value="2020/10/22 11:00" />
@@ -55,6 +56,7 @@
 		<property name="nameInventor" value="Raquel"/>
 		<property name="minMoney" value="10.0€" />
 		<property name="maxMoney" value="20.0€" />
+	</bean>
 
 	<!-- News -->
 	<bean id="new01" class="acme.entities.news.New">

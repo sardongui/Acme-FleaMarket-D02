@@ -1,0 +1,18 @@
+
+package acme.features.anonymous.materialSheet;
+
+import java.util.Collection;
+
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
+
+import acme.entities.materialSheets.MaterialSheet;
+import acme.framework.repositories.AbstractRepository;
+
+@Repository
+public interface AnonymousMaterialSheetRepository extends AbstractRepository {
+
+	@Query("Select m from MaterialSheet m")
+	Collection<MaterialSheet> findMany();
+
+}

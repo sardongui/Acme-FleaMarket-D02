@@ -41,6 +41,8 @@ master.menu.anonymous.create-martinez-bulletin = Publish in Martinez's bulletin
 
 master.menu.anonymous.list-new = News
 
+master.menu.anonymous.list-material-sheet = Material sheets
+
 # master.menu.authenticated ###################################################
 
 master.menu.authenticated = Authenticated
