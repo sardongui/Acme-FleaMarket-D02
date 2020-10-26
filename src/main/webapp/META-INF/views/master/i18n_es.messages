@@ -43,6 +43,7 @@ master.menu.authenticated.list-figment = Lista de productos
 
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
+master.menu.administrator.customisation = Customización
 master.menu.administrator.shutdown = Parar el sistema
 
 # master.menu.provider ########################################################
