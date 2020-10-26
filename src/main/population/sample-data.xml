@@ -31,4 +31,11 @@
 		<property name="moment" value="2020/10/22 17:30"/>
 	</bean>
 
+	<!-- Customisation -->
+	<bean id="Customisation" class="acme.entities.customisations.Customisation">
+		<property name="spamwords" value="sex,hard core,viagra,cialis,nigeria,you've won, million dollar,sexo,duro,has ganado,millon de dolares"/>
+		<property name="threshold" value="2.50"/>
+		<property name="newsCategories" value="Breaking news,Important news,Warning,Information"/>
+		<property name="itemsCategories" value="Toilette,Kitchen,Living room,Sleeping room,Garden"/>
+	</bean>
 </beans>

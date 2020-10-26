@@ -35,6 +35,7 @@ master.menu.anonymous.favourite-link = Enlace favorito
 
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
+master.menu.administrator.customisation = Customización
 master.menu.administrator.shutdown = Parar el sistema
 
 # master.menu.provider ########################################################
