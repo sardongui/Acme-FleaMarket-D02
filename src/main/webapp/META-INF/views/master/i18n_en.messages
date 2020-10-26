@@ -39,6 +39,8 @@ master.menu.anonymous.create-donaire-bulletin = Publish in Donaire's bulletin
 master.menu.anonymous.list-martinez-bulletin = Martinez's bulletin
 master.menu.anonymous.create-martinez-bulletin = Publish in Martinez's bulletin
 
+master.menu.anonymous.list-new = News
+
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator

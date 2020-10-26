@@ -55,6 +55,8 @@ master.menu.anonymous.create-donaire-bulletin = Publicar en boletín de Donaire
 master.menu.anonymous.list-martinez-bulletin = Boletín de Martinez
 master.menu.anonymous.create-martinez-bulletin = Publicar en boletín de Martinez
 
+master.menu.anonymous.list-new = Novedades
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Cuenta

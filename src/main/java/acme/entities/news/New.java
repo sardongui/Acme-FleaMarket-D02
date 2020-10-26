@@ -6,6 +6,7 @@ import java.util.Date;
 
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.constraints.NotBlank;
@@ -46,7 +47,7 @@ public class New extends DomainEntity {
 	@NotBlank
 	private String				body;
 
-	@ElementCollection
+	@ElementCollection(fetch = FetchType.EAGER)
 	public Collection<String>	relatedNews;
 
 }
