@@ -41,6 +41,7 @@ master.menu.anonymous.list-martinez-bulletin = Boletín de Martinez
 master.menu.anonymous.create-martinez-bulletin = Publicar en boletín de Martinez
 
 master.menu.anonymous.list-advertisement = Lista de anuncios
+master.menu.authenticated.list-advertisement = Lista de anuncios
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrador

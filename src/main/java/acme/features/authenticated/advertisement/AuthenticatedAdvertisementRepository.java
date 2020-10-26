@@ -1,4 +1,4 @@
-package acme.features.anonymous.advertisement;
+package acme.features.authenticated.advertisement;
 
 import java.util.Collection;
 
@@ -9,7 +9,7 @@ import acme.entities.advertisements.Advertisement;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
-public interface AnonymousAdvertisementRepository extends AbstractRepository{
+public interface AuthenticatedAdvertisementRepository extends AbstractRepository{
 
 	@Query("select a from Advertisement a where a.id = ?1")
 	Advertisement findOneById(int id);

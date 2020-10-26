@@ -40,7 +40,7 @@ master.menu.anonymous.list-martinez-bulletin = Martinez's bulletin
 master.menu.anonymous.create-martinez-bulletin = Publish in Martinez's bulletin
 
 master.menu.anonymous.list-advertisement = List of advertisement
-
+master.menu.authenticated.list-advertisement = List of advertisement
 # master.menu.administrator ###################################################
 
 master.menu.administrator = Administrator
