@@ -38,6 +38,20 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `figment` (
+       `id` integer not null,
+        `version` integer not null,
+        `creation_moment` datetime(6),
+        `description` varchar(255),
+        `max_money_amount` double precision,
+        `max_money_currency` varchar(255),
+        `min_money_amount` double precision,
+        `min_money_currency` varchar(255),
+        `name_inventor` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `martinez_bulletin` (
        `id` integer not null,
         `version` integer not null,
@@ -47,7 +61,16 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-    create table `material_sheet` (
+    create table `provider` (
+       `id` integer not null,
+        `version` integer not null,
+        `user_account_id` integer,
+        `company` varchar(255),
+        `sector` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+   create table `material_sheet` (
        `id` integer not null,
         `version` integer not null,
         `description` varchar(255),
@@ -74,16 +97,7 @@
        `new_id` integer not null,
         `related_news` varchar(255)
     ) engine=InnoDB;
-
-    create table `provider` (
-       `id` integer not null,
-        `version` integer not null,
-        `user_account_id` integer,
-        `company` varchar(255),
-        `sector` varchar(255),
-        primary key (`id`)
-    ) engine=InnoDB;
-
+    
     create table `tool_sheet` (
        `id` integer not null,
         `version` integer not null,
@@ -94,7 +108,7 @@
         `title` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
-
+    
     create table `user_account` (
        `id` integer not null,
         `version` integer not null,
@@ -136,12 +150,12 @@
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
 
-    alter table `new_related_news` 
-       add constraint `FKekvcmka1939ggq2mk62n8khap` 
-       foreign key (`new_id`) 
-       references `new` (`id`);
-
     alter table `provider` 
        add constraint FK_b1gwnjqm6ggy9yuiqm0o4rlmd 
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
+
+    alter table `new_related_news` 
+       add constraint `FKekvcmka1939ggq2mk62n8khap` 
+       foreign key (`new_id`) 
+       references `new` (`id`);

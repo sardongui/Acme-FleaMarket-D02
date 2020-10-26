@@ -31,6 +31,12 @@
 			<acme:menu-suboption code="master.menu.anonymous.list-new" action="/anonymous/new/list" />
 			
 		</acme:menu-option>
+		
+		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
+			<acme:menu-suboption code="master.menu.authenticated.list-suggestion" action="/authenticated/suggestion/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.list-figment" action="/authenticated/figment/list"/>
+
+		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
