@@ -8,7 +8,9 @@ import javax.persistence.TemporalType;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
+import javax.validation.constraints.Pattern;
 
+import org.hibernate.validator.constraints.Range;
 import org.hibernate.validator.constraints.URL;
 
 import acme.framework.entities.DomainEntity;
@@ -43,16 +45,20 @@ public class Advertisement extends DomainEntity{
 	private String				text;
 	
 	@NotEmpty
+	@Pattern(regexp = "^(small|average|large)$")
 	private String				discounts;
-	
-	//@NotEmpty
-	//private String smallDiscount;
-	
-	//@NotEmpty
-	//private String averageDiscount;
-	
-	//@NotEmpty
-	//private String largeDiscount;
+//	
+//	@NotEmpty
+//	@Range(min = 2, max = 3)
+//	private Double smallDiscount;
+//	
+//	@NotEmpty
+//	@Range(min = 4, max = 5)
+//	private Double averageDiscount;
+//	
+//	@NotEmpty
+//	@Range(min = 6)
+//	private Double largeDiscount;
 	
 
 }

@@ -1,0 +1,8 @@
+administrator.dashboard.form.label.numberNews = Noticias
+administrator.dashboard.form.label.numberMaterialSheets = Hoja de materiales
+administrator.dashboard.form.label.numberToolSheets = Hojas de herramientas
+administrator.dashboard.form.label.numberSuggestions = Sugerencias
+administrator.dashboard.form.label.numberFigments = Productos
+administrator.dashboard.form.label.minDiscountAdvertisements = Máximo volumen de descuentos en anuncios
+administrator.dashboard.form.label.maxDiscountAdvertisements = Mínimo volumen de descuentos en anuncios
+administrator.dashboard.form.button.return = Volver

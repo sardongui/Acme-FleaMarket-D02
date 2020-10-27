@@ -7,6 +7,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import acme.entities.advertisements.Advertisement;
 import acme.forms.Dashboard;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
@@ -54,22 +55,22 @@ public class AdministratorDashboardShow implements AbstractShowService<Administr
 		res.setNumberSuggestions(numberSuggestions);
 		Integer numberFigments = this.repository.numberFigments();
 		res.setNumberFigments(numberFigments);
-		Double minDiscountAdvertisements = this.repository.minDiscountAdvertisements();
-		res.setMinDiscountAdvertisements(minDiscountAdvertisements);
-		Double maxDiscountAdvertisements = this.repository.maxDiscountAdvertisements();
-		res.setMaxDiscountAdvertisements(maxDiscountAdvertisements);
-		Double averageDiscountAdvertisements = this.repository.averageDiscountAdvertisements();
-		res.setAverageDiscountAdvertisements(averageDiscountAdvertisements);
-		//STDDEV INQUIRIE
-		Collection<Advertisement> stddevDiscountAdvertisements = this.repository.stddevDiscountAdvertisements();
-		List<Advertisement> advertisement = (List<Advertisement>) stddevDiscountAdvertisements;
-		List<Double> maxAndMinAdv = new ArrayList<Double>();
-		for (int i = 0; i < stddevDiscountAdvertisements.size(); i++) {
-			maxAndMinAdv.add(advertisement.get(i).getMinMoney().getAmount());
-			maxAndMinAdv.add(advertisement.get(i).getMaxMoney().getAmount());
-		}
-		Double stddevInq = AdministratorDashboardShow.stdev(maxAndMinAdv, stddevDiscountAdvertisements);
-		res.stddevDiscountAdvertisements(stddevDiscountAdvertisements);
+//		Double minDiscountAdvertisements = this.repository.minDiscountAdvertisements();
+//		res.setMinDiscountAdvertisements(minDiscountAdvertisements);
+//		Double maxDiscountAdvertisements = this.repository.maxDiscountAdvertisements();
+//		res.setMaxDiscountAdvertisements(maxDiscountAdvertisements);
+//		Double averageDiscountAdvertisements = this.repository.averageDiscountAdvertisements();
+//		res.setAverageDiscountAdvertisements(averageDiscountAdvertisements);
+		//STDDEV Advertisement
+		//Collection<Advertisement> stddevDiscountAdvertisements = this.repository.stddevDiscountAdvertisements();
+		//List<Advertisement> advertisement = (List<Advertisement>) stddevDiscountAdvertisements;
+		//List<Double> maxAndMinAdv = new ArrayList<Double>();
+//		for (int i = 0; i < stddevDiscountAdvertisements.size(); i++) {
+//			maxAndMinAdv.add(advertisement.get(i).getMinMoney().getAmount());
+//			maxAndMinAdv.add(advertisement.get(i).getMaxMoney().getAmount());
+//		}
+		//Double stddevInq = AdministratorDashboardShow.stdev(maxAndMinAdv, stddevDiscountAdvertisements);
+		//res.setStddevDiscountAdvertisements(stddevDiscountAdvertisements);
 		
 		return res;
 	}
