@@ -39,14 +39,16 @@ master.menu.anonymous.create-donaire-bulletin = Publish in Donaire's bulletin
 master.menu.anonymous.list-martinez-bulletin = Martinez's bulletin
 master.menu.anonymous.create-martinez-bulletin = Publish in Martinez's bulletin
 
-master.menu.anonymous.list-new = News
+master.menu.anonymous.list-advertisement = List of Advertisement
+master.menu.anonymous.list-new = List of News
 
 # master.menu.authenticated ###################################################
 
 master.menu.authenticated = Authenticated
-master.menu.authenticated.list-suggestion = List of suggestion
-master.menu.authenticated.list-figment = List of figments
-master.menu.authenticated.list-new = List of news
+master.menu.authenticated.list-suggestion = List of Suggestion
+master.menu.authenticated.list-figment = List of Figments
+master.menu.authenticated.list-new = List of News
+master.menu.authenticated.list-advertisement = List of Advertisement
 
 # master.menu.administrator ###################################################
 

@@ -31,16 +31,18 @@ master.menu.sign-out = Salir
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 
-master.menu.anonymous.favourite-link-donaire = Enlace favorito Donaire
-master.menu.anonymous.favourite-link-martinez = Enlace favorito Martínez
+master.menu.anonymous.favourite-link-donaire = Enlace favorito de Donaire
+master.menu.anonymous.favourite-link-martinez = Enlace favorito de Martinez
 
-master.menu.anonymous.list-donaire-bulletin = Boletín Donaire
-master.menu.anonymous.create-donaire-bulletin = Publicar en boletín Donaire
+master.menu.anonymous.list-donaire-bulletin = Boletín de Donaire
+master.menu.anonymous.create-donaire-bulletin = Publicar en boletín de Donaire
 
-master.menu.anonymous.list-martinez-bulletin = Boletín Martínez
-master.menu.anonymous.create-martinez-bulletin = Publicar en boletín Martínez
+master.menu.anonymous.list-martinez-bulletin = Boletín de Martinez
+master.menu.anonymous.create-martinez-bulletin = Publicar en boletín de Martinez
 
-master.menu.anonymous.list-new = Novedades
+master.menu.anonymous.list-advertisement = Lista de anuncios
+master.menu.authenticated.list-advertisement = Lista de anuncios
+master.menu.anonymous.list-new = Lista de Novedades
 
 # master.menu.authenticated ###################################################
 
@@ -67,14 +69,7 @@ master.menu.provider.favourite-link = Enlace favorito
 
 master.menu.consumer = Consumidor
 master.menu.consumer.favourite-link = Enlace favorito
-master.menu.anonymous.favourite-link-donaire = Enlace favorito de Donaire
-master.menu.anonymous.favourite-link-martinez = Enlace favorito de Martinez
 
-master.menu.anonymous.list-donaire-bulletin = Boletín de Donaire
-master.menu.anonymous.create-donaire-bulletin = Publicar en boletín de Donaire
-
-master.menu.anonymous.list-martinez-bulletin = Boletín de Martinez
-master.menu.anonymous.create-martinez-bulletin = Publicar en boletín de Martinez
 
 master.menu.anonymous.list-new = Novedades
 
