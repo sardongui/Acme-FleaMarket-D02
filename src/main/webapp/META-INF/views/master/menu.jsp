@@ -35,6 +35,7 @@
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.authenticated.list-suggestion" action="/authenticated/suggestion/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.list-figment" action="/authenticated/figment/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.list-new" action="/authenticated/new/list"/>
 
 		</acme:menu-option>
 
