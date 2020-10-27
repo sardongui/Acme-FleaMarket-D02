@@ -59,6 +59,8 @@ master.menu.administrator.shutdown = Shut down
 
 master.menu.administrator.list-new = News
 
+master.menu.administrator.chart = Chart
+
 # master.menu.provider ########################################################
 
 master.menu.provider = Provider

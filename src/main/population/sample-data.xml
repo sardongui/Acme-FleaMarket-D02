@@ -78,7 +78,7 @@
 
 	<!-- News -->
 	<bean id="new01" class="acme.entities.news.New">
-		<property name="category" value="Categoria-1"/>
+		<property name="category" value="Info"/>
 		<property name="picture" value="https://png.pngtree.com/picture-new1.jpg"/>
 		<property name="title" value="Ejemplo1"/>
 		<property name="moment" value="2020/10/25 10:21"/>
@@ -91,7 +91,7 @@
 	</bean>
 	
 	<bean id="new02" class="acme.entities.news.New">
-		<property name="category" value="Categoria-1"/>
+		<property name="category" value="Warning"/>
 		<property name="picture" value="https://png.pngtree.com/picture-new2.jpg"/>
 		<property name="title" value="Ejemplo2"/>
 		<property name="moment" value="2020/10/25 10:25"/>
@@ -106,7 +106,7 @@
 	</bean>
 	
 	<bean id="new03" class="acme.entities.news.New">
-		<property name="category" value="Categoria-2"/>
+		<property name="category" value="Info"/>
 		<property name="picture" value="https://png.pngtree.com/picture-new3.jpg"/>
 		<property name="title" value="Ejemplo3"/>
 		<property name="moment" value="2020/10/22 12:00"/>
