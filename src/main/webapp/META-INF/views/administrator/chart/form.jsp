@@ -15,25 +15,24 @@
 	<%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 	
 
-	<div>
-	<acme:message code="administrator.chart.form.label.numberOfNewsGroupedByCategory"/>
+	<div class="w-100 text-center">
+		<b><acme:message code="administrator.chart.form.label.numberOfNewsGroupedByCategory"/></b>
 		<canvas id="numberOfNewsGroupedByCategory"></canvas>
 	</div>
 	<br></br>
-	<div>
-	<acme:message code="administrator.chart.form.label.ratioOfWarningNewsVersusRestOfit"/>
+	<div class="w-100 text-center">
+		<b><acme:message code="administrator.chart.form.label.ratioOfWarningNewsVersusRestOfit"/></b>
 	    <canvas id="ratioOfWarningNewsVersusRestOfit"></canvas>
 	</div>
 	<br></br>
-	<div>
-	<acme:message code="administrator.chart.form.label.numberOfAdvertisementsGroupedByDiscount"/>
+	<div class="w-100 text-center">
+		<b><acme:message code="administrator.chart.form.label.numberOfAdvertisementsGroupedByDiscount"/></b>
 		<canvas id="numberOfAdvertisementsGroupedByDiscount"></canvas>
 	</div>
 	<br></br>
 	
-
 	<script type ="text/javascript">
-	 $(document).ready(function(){
+	$(document).ready(function(){
 		 var CanvasCompany = document.getElementById("numberOfNewsGroupedByCategory");
 		 Chart.defaults.global.defaultFontFamily = "Modeka";
 		 Chart.defaults.global.defaultFontSize = 15;
@@ -51,7 +50,7 @@
 							 "<jstl:out value = "${item[1]}" />" ,
 							 </jstl:forEach>
 						 ],
-						 backgroundColor :["blue", "red", "yellow", "green", "purple"]
+						 backgroundColor :["blue", "yellow", "red", "green", "purple"]
 					 }
 				 ]
 		 };
@@ -60,32 +59,24 @@
 			 data: DataCompany
 		 });
 	 });
-	 
-	 $(document).ready(function(){
-		 var CanvasInvestor = document.getElementById("ratioOfWarningNewsVersusRestOfit");
+	
+	$(document).ready(function(){
+		 var CanvasCompany = document.getElementById("ratioOfWarningNewsVersusRestOfit");
 		 Chart.defaults.global.defaultFontFamily = "Modeka";
 		 Chart.defaults.global.defaultFontSize = 15;
 		 
-		 var DataInvestor = {
-				 labels : [
-					 <jstl:forEach items = "${ratioOfWarningNewsVersusRestOfit}" var="item">
-					 "<jstl:out value= "${item[0]}" />" ,
-					 </jstl:forEach>
-				 ],
+		 var DataCompany = {
+				 labels : ["Warning", "Not warning"],
 				 datasets:[
 					 {
-						 data: [
-							 <jstl:forEach items= "${ratioOfWarningNewsVersusRestOfit}" var="item">
-							 "<jstl:out value = "${item[1]}" />" ,
-							 </jstl:forEach>
-						 ],
-						 backgroundColor :["blue", "red", "yellow", "green", "purple"]
+						 data: ["<jstl:out value = '${ratioOfWarningNewsVersusRestOfit[0][0]}' />","<jstl:out value = '${ratioOfWarningNewsVersusRestOfit[0][1]}' />"],
+						 backgroundColor :["yellow", "green", "red", "blue", "purple"]
 					 }
 				 ]
 		 };
-		 var pieChartInvestor = new Chart(CanvasInvestor, {
+		 var pieChartCompany = new Chart(CanvasCompany, {
 			 type: 'pie',
-			 data: DataInvestor
+			 data: DataCompany
 		 });
 	 });
 	 
