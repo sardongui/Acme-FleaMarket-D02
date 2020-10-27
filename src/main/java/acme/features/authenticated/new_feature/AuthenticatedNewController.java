@@ -1,5 +1,5 @@
 
-package acme.features.anonymous.new_feature;
+package acme.features.authenticated.new_feature;
 
 import javax.annotation.PostConstruct;
 
@@ -10,19 +10,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import acme.entities.news.New;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
-import acme.framework.entities.Anonymous;
+import acme.framework.entities.Authenticated;
 
 @Controller
-@RequestMapping("/anonymous/new/")
-public class AnonymousNewController extends AbstractController<Anonymous, New> {
+@RequestMapping("/authenticated/new/")
+public class AuthenticatedNewController extends AbstractController<Authenticated, New> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AnonymousNewListService	listService;
+	private AuthenticatedNewListService	listService;
 
 	@Autowired
-	private AnonymousNewShowService	showService;
+	private AuthenticatedNewShowService	showService;
 
 
 	// Constructors -----------------------------------------------------------

@@ -1,5 +1,5 @@
 
-package acme.features.anonymous.new_feature;
+package acme.features.administrator.new_feature;
 
 import javax.annotation.PostConstruct;
 
@@ -10,19 +10,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import acme.entities.news.New;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
-import acme.framework.entities.Anonymous;
+import acme.framework.entities.Administrator;
 
 @Controller
-@RequestMapping("/anonymous/new/")
-public class AnonymousNewController extends AbstractController<Anonymous, New> {
+@RequestMapping("/administrator/new/")
+public class AdministratorNewController extends AbstractController<Administrator, New> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AnonymousNewListService	listService;
+	private AdministratorNewListService	listService;
 
 	@Autowired
-	private AnonymousNewShowService	showService;
+	private AdministratorNewShowService	showService;
 
 
 	// Constructors -----------------------------------------------------------
@@ -32,4 +32,5 @@ public class AnonymousNewController extends AbstractController<Anonymous, New> {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 	}
+
 }

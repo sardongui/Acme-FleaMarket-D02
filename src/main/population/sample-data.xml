@@ -30,7 +30,25 @@
 		<property name="description" value="Donde las críticas constructivas, brillan por su ausencia."/>
 		<property name="moment" value="2020/10/22 17:30"/>
 	</bean>
-	<!-- Suggestion -->
+
+	<!-- Advertisement -->
+	<bean id="Advertisement01" class="acme.entities.advertisements.Advertisement">
+		<property name="picture" value="https://ar.pinterest.com/pin/833940055989345675/"/>
+		<property name="title" value="Advertisement 1"/>
+		<property name="creationMoment" value="2020/07/21 18:00"/>
+		<property name="displayPeriod" value="2020/12/20 17:00"/>
+		<property name="text" value="Text Advertisement 1"/>
+		<property name="discounts" value="Small"/>
+	</bean>
+	<bean id="Advertisement02" class="acme.entities.advertisements.Advertisement">
+		<property name="picture" value="https://ar.pinterest.com/pin/833940055989345675/"/>
+		<property name="title" value="Advertisement 2"/>
+		<property name="creationMoment" value="2020/10/21 18:00"/>
+		<property name="displayPeriod" value="2020/12/20 17:00"/>
+		<property name="text" value="Text Advertisement 2"/>
+		<property name="discounts" value="Average"/>
+	
+	<!-- Suggestions -->
 	<bean id="Suggestion01" class="acme.entities.suggestions.Suggestion">
 		<property name="title" value="Suggestion 01"/>
 		<property name="description" value="Podemos hacerte una sugerencia si lo desea."/>
@@ -38,7 +56,7 @@
 		<property name="email" value="sardongui@us.es"/>
 	</bean>
 	
-
+	<!-- Figments -->
 	<bean id="Figment01" class="acme.entities.figments.Figment">
 		<property name="title" value="Figment 1" />
 		<property name="creationMoment" value="2020/10/22 11:00" />
@@ -56,6 +74,8 @@
 		<property name="minMoney" value="10.0€" />
 		<property name="maxMoney" value="20.0€" />
 
+	</bean>
+
 	<!-- News -->
 	<bean id="new01" class="acme.entities.news.New">
 		<property name="category" value="Categoria-1"/>
@@ -63,7 +83,7 @@
 		<property name="title" value="Ejemplo1"/>
 		<property name="moment" value="2020/10/25 10:21"/>
 		<property name="deadline" value="2020/11/20 23:00"/>
-		<property name="body" value="Esto es una noticia de ejemplo (1)"/>
+		<property name="body" value="Esto es una novedad de ejemplo (1)"/>
 		<property name="relatedNews">
 			<list>
 			</list>
@@ -76,7 +96,7 @@
 		<property name="title" value="Ejemplo2"/>
 		<property name="moment" value="2020/10/25 10:25"/>
 		<property name="deadline" value="2020/11/20 23:00"/>
-		<property name="body" value="Esto es una noticia de ejemplo (2)"/>
+		<property name="body" value="Esto es una novedad de ejemplo (2)"/>
 		<property name="relatedNews">
 			<list>
 				<value>www.related-new1.com</value>
@@ -91,7 +111,7 @@
 		<property name="title" value="Ejemplo3"/>
 		<property name="moment" value="2020/10/22 12:00"/>
 		<property name="deadline" value="2020/10/23 23:00"/>
-		<property name="body" value="Esto es una noticia de ejemplo (3)"/>
+		<property name="body" value="Esto es una novedad de ejemplo (3)"/>
 		<property name="relatedNews">
 			<list>
 				<value>www.related-new3.com</value>

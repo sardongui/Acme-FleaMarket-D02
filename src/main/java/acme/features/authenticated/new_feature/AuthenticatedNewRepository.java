@@ -1,5 +1,5 @@
 
-package acme.features.anonymous.new_feature;
+package acme.features.authenticated.new_feature;
 
 import java.util.Collection;
 
@@ -10,7 +10,7 @@ import acme.entities.news.New;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
-public interface AnonymousNewRepository extends AbstractRepository {
+public interface AuthenticatedNewRepository extends AbstractRepository {
 
 	@Query("Select n from New n")
 	Collection<New> findMany();
