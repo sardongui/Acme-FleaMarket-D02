@@ -65,7 +65,7 @@
 		<property name="title" value="Ejemplo1"/>
 		<property name="moment" value="2020/10/25 10:21"/>
 		<property name="deadline" value="2020/11/20 23:00"/>
-		<property name="body" value="Esto es una noticia de ejemplo (1)"/>
+		<property name="body" value="Esto es una novedad de ejemplo (1)"/>
 		<property name="relatedNews">
 			<list>
 			</list>
@@ -78,7 +78,7 @@
 		<property name="title" value="Ejemplo2"/>
 		<property name="moment" value="2020/10/25 10:25"/>
 		<property name="deadline" value="2020/11/20 23:00"/>
-		<property name="body" value="Esto es una noticia de ejemplo (2)"/>
+		<property name="body" value="Esto es una novedad de ejemplo (2)"/>
 		<property name="relatedNews">
 			<list>
 				<value>www.related-new1.com</value>
@@ -93,7 +93,7 @@
 		<property name="title" value="Ejemplo3"/>
 		<property name="moment" value="2020/10/22 12:00"/>
 		<property name="deadline" value="2020/10/23 23:00"/>
-		<property name="body" value="Esto es una noticia de ejemplo (3)"/>
+		<property name="body" value="Esto es una novedad de ejemplo (3)"/>
 		<property name="relatedNews">
 			<list>
 				<value>www.related-new3.com</value>

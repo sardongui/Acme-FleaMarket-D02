@@ -31,6 +31,16 @@ master.menu.sign-out = Salir
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
 
+master.menu.anonymous.favourite-link-donaire = Enlace favorito Donaire
+master.menu.anonymous.favourite-link-martinez = Enlace favorito Martínez
+
+master.menu.anonymous.list-donaire-bulletin = Boletín Donaire
+master.menu.anonymous.create-donaire-bulletin = Publicar en boletín Donaire
+
+master.menu.anonymous.list-martinez-bulletin = Boletín Martínez
+master.menu.anonymous.create-martinez-bulletin = Publicar en boletín Martínez
+
+master.menu.anonymous.list-new = Novedades
 
 # master.menu.authenticated ###################################################
 
@@ -45,6 +55,8 @@ master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.customisation = Customización
 master.menu.administrator.shutdown = Parar el sistema
+
+master.menu.administrator.list-new = Novedades
 
 # master.menu.provider ########################################################
 
