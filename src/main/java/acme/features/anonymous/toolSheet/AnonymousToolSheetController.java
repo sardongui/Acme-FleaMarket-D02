@@ -19,7 +19,10 @@ public class AnonymousToolSheetController extends AbstractController<Anonymous, 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AnonymousToolSheetListService listService;
+	private AnonymousToolSheetListService	listService;
+
+	@Autowired
+	private AnonymousToolSheetShowService	showService;
 
 
 	// Constructors -----------------------------------------------------------
@@ -27,5 +30,6 @@ public class AnonymousToolSheetController extends AbstractController<Anonymous, 
 	@PostConstruct
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
+		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 	}
 }

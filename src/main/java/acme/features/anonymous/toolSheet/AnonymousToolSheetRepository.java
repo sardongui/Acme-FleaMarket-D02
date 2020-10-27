@@ -15,4 +15,7 @@ public interface AnonymousToolSheetRepository extends AbstractRepository {
 	@Query("Select t from ToolSheet t")
 	Collection<ToolSheet> findMany();
 
+	@Query("select t from ToolSheet t where t.id =?1")
+	ToolSheet findOneById(int id);
+
 }
