@@ -17,4 +17,7 @@ public interface AnonymousNewRepository extends AbstractRepository {
 
 	@Query("Select n from New n where CURRENT_TIMESTAMP >= n.moment and CURRENT_TIMESTAMP < n.deadline")
 	Collection<New> findManyActive();
+
+	@Query("select n from New n where n.id =?1")
+	New findOneById(int id);
 }

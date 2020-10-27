@@ -19,7 +19,10 @@ public class AnonymousNewController extends AbstractController<Anonymous, New> {
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AnonymousNewListService listService;
+	private AnonymousNewListService	listService;
+
+	@Autowired
+	private AnonymousNewShowService	showService;
 
 
 	// Constructors -----------------------------------------------------------
@@ -27,5 +30,6 @@ public class AnonymousNewController extends AbstractController<Anonymous, New> {
 	@PostConstruct
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
+		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 	}
 }
