@@ -15,4 +15,7 @@ public interface AnonymousMaterialSheetRepository extends AbstractRepository {
 	@Query("Select m from MaterialSheet m")
 	Collection<MaterialSheet> findMany();
 
+	@Query("select m from MaterialSheet m where m.id =?1")
+	MaterialSheet findOneById(int id);
+
 }

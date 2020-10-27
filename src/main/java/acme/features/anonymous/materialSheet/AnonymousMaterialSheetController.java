@@ -19,7 +19,10 @@ public class AnonymousMaterialSheetController extends AbstractController<Anonymo
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AnonymousMaterialSheetListService listService;
+	private AnonymousMaterialSheetListService	listService;
+
+	@Autowired
+	private AnonymousMaterialSheetShowService	showService;
 
 
 	// Constructors -----------------------------------------------------------
@@ -27,5 +30,6 @@ public class AnonymousMaterialSheetController extends AbstractController<Anonymo
 	@PostConstruct
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.LIST, this.listService);
+		super.addBasicCommand(BasicCommand.SHOW, this.showService);
 	}
 }
