@@ -18,6 +18,10 @@
 
 <tiles-definitions>
 
+	<definition name="anonymous/new/form" extends="master">
+		<put-attribute name="body" type="template" value="../anonymous/new/form.jsp" />
+	</definition>
+
 	<definition name="anonymous/new/list" extends="master">		
 		<put-attribute name="body" type="template" value="../anonymous/new/list.jsp" />
 	</definition>
