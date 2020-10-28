@@ -8,6 +8,7 @@ import javax.persistence.TemporalType;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
+import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.URL;
 
@@ -43,16 +44,24 @@ public class Advertisement extends DomainEntity{
 	private String				text;
 	
 	@NotEmpty
+	@Pattern(regexp = "^(SMALL|AVERAGE|LARGE)$")
 	private String				discounts;
 	
-	//@NotEmpty
-	//private String smallDiscount;
+	private Double item;
 	
-	//@NotEmpty
-	//private String averageDiscount;
-	
-	//@NotEmpty
-	//private String largeDiscount;
+	public String kindDiscounts() {
+		if(this.item==3 || this.item==2) {
+			 this.discounts.equals("SMALL");
+		}else if(this.item==4 || this.item==5) {
+			this.discounts.equals("AVERAGE");
+		}else if(this.item>=6) {
+			this.discounts.equals("LARGE");
+		}else {
+			return "No tiene descuento";
+		}
+
+		return discounts;
+	}
 	
 
 }

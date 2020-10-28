@@ -58,8 +58,9 @@ master.menu.administrator.customisation = Customisation
 master.menu.administrator.shutdown = Shut down
 
 master.menu.administrator.list-new = News
-
+master.menu.administrator.dashboard = Dashboard
 master.menu.administrator.chart = Chart
+
 
 # master.menu.provider ########################################################
 
