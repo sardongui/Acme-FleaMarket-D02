@@ -104,7 +104,7 @@
 	<!-- Material Sheets -->
 	<bean id="materialSheet01" class="acme.entities.materialSheets.MaterialSheet">
 		<property name="title" value="Material Sheet 1"/>
-		<property name="description" value="Esto es Nuna hoja de inventario de ejemplo (1)"/>
+		<property name="description" value="Esto es una hoja de inventario de ejemplo (1)"/>
 		<property name="providerName" value="Provider 1"/>
 		<property name="providerHomePage" value="https://www.provider1.com"/>
 		<property name="rating" value="3"/>
