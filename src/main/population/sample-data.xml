@@ -31,7 +31,7 @@
 		<property name="moment" value="2020/10/22 17:30"/>
 	</bean>
 
-	<!-- Advertisement -->
+	<!-- Advertisements -->
 	<bean id="Advertisement01" class="acme.entities.advertisements.Advertisement">
 		<property name="picture" value="https://ar.pinterest.com/pin/833940055989345675/"/>
 		<property name="title" value="Advertisement 1"/>
@@ -41,6 +41,7 @@
 		<property name="discounts" value="SMALL"/>
 		<property name="item" value="3"/>
 	</bean>
+	
 	<bean id="Advertisement02" class="acme.entities.advertisements.Advertisement">
 		<property name="picture" value="https://ar.pinterest.com/pin/833940055989345675/"/>
 		<property name="title" value="Advertisement 2"/>
@@ -68,6 +69,7 @@
 		<property name="discounts" value="LARGE"/>
 		<property name="item" value="7"/>
 	</bean>
+
 	<!-- Suggestions -->
 	<bean id="Suggestion01" class="acme.entities.suggestions.Suggestion">
 		<property name="title" value="Suggestion 01"/>
@@ -97,7 +99,7 @@
 
 	<!-- News -->
 	<bean id="new01" class="acme.entities.news.New">
-		<property name="category" value="Categoria-1"/>
+		<property name="category" value="Info"/>
 		<property name="picture" value="https://png.pngtree.com/picture-new1.jpg"/>
 		<property name="title" value="Ejemplo1"/>
 		<property name="moment" value="2020/10/25 10:21"/>
@@ -110,7 +112,7 @@
 	</bean>
 	
 	<bean id="new02" class="acme.entities.news.New">
-		<property name="category" value="Categoria-1"/>
+		<property name="category" value="Warning"/>
 		<property name="picture" value="https://png.pngtree.com/picture-new2.jpg"/>
 		<property name="title" value="Ejemplo2"/>
 		<property name="moment" value="2020/10/25 10:25"/>
@@ -125,7 +127,7 @@
 	</bean>
 	
 	<bean id="new03" class="acme.entities.news.New">
-		<property name="category" value="Categoria-2"/>
+		<property name="category" value="Info"/>
 		<property name="picture" value="https://png.pngtree.com/picture-new3.jpg"/>
 		<property name="title" value="Ejemplo3"/>
 		<property name="moment" value="2020/10/22 12:00"/>
