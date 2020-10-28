@@ -20,13 +20,23 @@ public class Dashboard implements Serializable{
 	Integer						numberSuggestions;
 	
 	Integer						numberFigments;
+	
+	Integer						numberAdvertisement;
 
 	Double						minDiscountAdvertisements;
 
 	Double						maxDiscountAdvertisements;
 
-	Double						averageDiscountAdvertisements;
+	Double						averageSmallDiscountAdvertisements;
+	
+	Double						averageAverageDiscountAdvertisements;
+	
+	Double						averageLargeDiscountAdvertisements;
 
-	Double						stddevDiscountAdvertisements;
+	Double						stddevSDiscountAdvertisements;
+	
+	Double						stddevADiscountAdvertisements;
+	
+	Double						stddevLDiscountAdvertisements;
 
 }

@@ -33,8 +33,11 @@ public class AdministratorDashboardShow implements AbstractShowService<Administr
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "numberNews", "numberMaterialSheets", "numberToolSheets", "numberSuggestions", "numberFigments", "minDiscountAdvertisements", "maxDiscountAdvertisements", "averageDiscountAdvertisements",
-			"stddevDiscountAdvertisements");
+		request.unbind(entity, model, "numberNews", "numberMaterialSheets", "numberToolSheets", 
+				"numberSuggestions", "numberFigments", "minDiscountAdvertisements", 
+				"maxDiscountAdvertisements", "averageSmallDiscountAdvertisements", "averageAverageDiscountAdvertisements",
+				"averageLargeDiscountAdvertisements","stddevSDiscountAdvertisements", "stddevADiscountAdvertisements",
+				"stddevLDiscountAdvertisements");
 	}
 
 
@@ -55,23 +58,46 @@ public class AdministratorDashboardShow implements AbstractShowService<Administr
 		res.setNumberSuggestions(numberSuggestions);
 		Integer numberFigments = this.repository.numberFigments();
 		res.setNumberFigments(numberFigments);
-//		Double minDiscountAdvertisements = this.repository.minDiscountAdvertisements();
-//		res.setMinDiscountAdvertisements(minDiscountAdvertisements);
-//		Double maxDiscountAdvertisements = this.repository.maxDiscountAdvertisements();
-//		res.setMaxDiscountAdvertisements(maxDiscountAdvertisements);
-//		Double averageDiscountAdvertisements = this.repository.averageDiscountAdvertisements();
-//		res.setAverageDiscountAdvertisements(averageDiscountAdvertisements);
+		Double minDiscountAdvertisements = this.repository.minDiscountAdvertisements();
+		res.setMinDiscountAdvertisements(minDiscountAdvertisements);
+		Double maxDiscountAdvertisements = this.repository.maxDiscountAdvertisements();
+		res.setMaxDiscountAdvertisements(maxDiscountAdvertisements);
+		Double averageSmallDiscountAdvertisements = this.repository.averageSmallDiscountAdvertisements() / this.repository.numberAdvertisement();
+		res.setAverageSmallDiscountAdvertisements(averageSmallDiscountAdvertisements);
+		Double averageAverageDiscountAdvertisements = this.repository.averageAverageDiscountAdvertisements() / this.repository.numberAdvertisement();
+		res.setAverageAverageDiscountAdvertisements(averageAverageDiscountAdvertisements);
+		Double averageLargeDiscountAdvertisements = this.repository.averageLargeDiscountAdvertisements() / this.repository.numberAdvertisement();
+		res.setAverageLargeDiscountAdvertisements(averageLargeDiscountAdvertisements);
 		//STDDEV Advertisement
-		//Collection<Advertisement> stddevDiscountAdvertisements = this.repository.stddevDiscountAdvertisements();
-		//List<Advertisement> advertisement = (List<Advertisement>) stddevDiscountAdvertisements;
-		//List<Double> maxAndMinAdv = new ArrayList<Double>();
-//		for (int i = 0; i < stddevDiscountAdvertisements.size(); i++) {
-//			maxAndMinAdv.add(advertisement.get(i).getMinMoney().getAmount());
-//			maxAndMinAdv.add(advertisement.get(i).getMaxMoney().getAmount());
-//		}
-		//Double stddevInq = AdministratorDashboardShow.stdev(maxAndMinAdv, stddevDiscountAdvertisements);
-		//res.setStddevDiscountAdvertisements(stddevDiscountAdvertisements);
+		Collection<Advertisement> stddevSDiscountAdvertisements = this.repository.stddevDiscountAdvertisements();
+		List<Advertisement> advertisement = (List<Advertisement>) stddevSDiscountAdvertisements;
+		List<Double> maxAndMinSAdv = new ArrayList<Double>();
+		for (int i = 0; i < stddevSDiscountAdvertisements.size(); i++) {
+			maxAndMinSAdv.add(advertisement.get(i).getItem());
+			maxAndMinSAdv.add(advertisement.get(i).getItem());
+		}
+		Double stddevSAdv = AdministratorDashboardShow.stdev(maxAndMinSAdv, averageSmallDiscountAdvertisements);
+		res.setStddevSDiscountAdvertisements(stddevSAdv);
 		
+		Collection<Advertisement> stddevADiscountAdvertisements = this.repository.stddevDiscountAdvertisements();
+		List<Advertisement> advertisement2 = (List<Advertisement>) stddevADiscountAdvertisements;
+		List<Double> maxAndMinAAdv = new ArrayList<Double>();
+		for (int i = 0; i < stddevADiscountAdvertisements.size(); i++) {
+			maxAndMinAAdv.add(advertisement2.get(i).getItem());
+			maxAndMinAAdv.add(advertisement2.get(i).getItem());
+		}
+		Double stddevAAdv = AdministratorDashboardShow.stdev(maxAndMinAAdv, averageAverageDiscountAdvertisements);
+		res.setStddevADiscountAdvertisements(stddevAAdv);
+		
+		Collection<Advertisement> stddevLDiscountAdvertisements = this.repository.stddevDiscountAdvertisements();
+		List<Advertisement> advertisement3 = (List<Advertisement>) stddevLDiscountAdvertisements;
+		List<Double> maxAndMinLAdv = new ArrayList<Double>();
+		for (int i = 0; i < stddevLDiscountAdvertisements.size(); i++) {
+			maxAndMinLAdv.add(advertisement3.get(i).getItem());
+			maxAndMinLAdv.add(advertisement3.get(i).getItem());
+		}
+		Double stddevLAdv = AdministratorDashboardShow.stdev(maxAndMinLAdv, averageLargeDiscountAdvertisements);
+		res.setStddevLDiscountAdvertisements(stddevLAdv);
 		return res;
 	}
 

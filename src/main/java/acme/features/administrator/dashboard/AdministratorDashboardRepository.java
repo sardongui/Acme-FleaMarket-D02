@@ -2,9 +2,12 @@ package acme.features.administrator.dashboard;
 
 
 
+import java.util.Collection;
+
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import acme.entities.advertisements.Advertisement;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
@@ -24,16 +27,25 @@ public interface AdministratorDashboardRepository extends AbstractRepository{
 	
 	@Query("select count(f) from Figment f")
 	Integer numberFigments();
-//	
-//	@Query("select min (a.discounts) from Advertisement a")
-//	Double minDiscountAdvertisements();
-//
-//	@Query("select max count(a.discounts) from Advertisement a")
-//	Double maxDiscountAdvertisements();
+	
+	@Query("select count(a) from Advertisement a")
+	Integer numberAdvertisement();
+	
+	@Query("select min (a.item) from Advertisement a")
+	Double minDiscountAdvertisements();
 
-	//@Query("select avg ((max_money_amount + min_money_amount)/2) from Advertisement a group by a.discounts")
-	//Double averageDiscountAdvertisements();
+	@Query("select max (a.item) from Advertisement a")
+	Double maxDiscountAdvertisements();
 
-	//@Query("select a from Advertisement a")
-	//Collection<Advertisement> stddevDiscountAdvertisements();
+	@Query("select count(a) from Advertisement a where a.discounts LIKE '%SMALL%'")
+	Double averageSmallDiscountAdvertisements();
+	
+	@Query("select count(a) from Advertisement a where a.discounts LIKE '%AVERAGE%'")
+	Double averageAverageDiscountAdvertisements();
+	
+	@Query("select count(a) from Advertisement a where a.discounts LIKE '%LARGE%'")
+	Double averageLargeDiscountAdvertisements();
+
+	@Query("select a from Advertisement a")
+	Collection<Advertisement> stddevDiscountAdvertisements();
 }

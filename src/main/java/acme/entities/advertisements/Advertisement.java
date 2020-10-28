@@ -10,7 +10,6 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 
-import org.hibernate.validator.constraints.Range;
 import org.hibernate.validator.constraints.URL;
 
 import acme.framework.entities.DomainEntity;
@@ -45,20 +44,24 @@ public class Advertisement extends DomainEntity{
 	private String				text;
 	
 	@NotEmpty
-	@Pattern(regexp = "^(small|average|large)$")
+	@Pattern(regexp = "^(SMALL|AVERAGE|LARGE)$")
 	private String				discounts;
-//	
-//	@NotEmpty
-//	@Range(min = 2, max = 3)
-//	private Double smallDiscount;
-//	
-//	@NotEmpty
-//	@Range(min = 4, max = 5)
-//	private Double averageDiscount;
-//	
-//	@NotEmpty
-//	@Range(min = 6)
-//	private Double largeDiscount;
+	
+	private Double item;
+	
+	public String kindDiscounts() {
+		if(this.item==3 || this.item==2) {
+			 this.discounts.equals("SMALL");
+		}else if(this.item==4 || this.item==5) {
+			this.discounts.equals("AVERAGE");
+		}else if(this.item>=6) {
+			this.discounts.equals("LARGE");
+		}else {
+			return "No tiene descuento";
+		}
+
+		return discounts;
+	}
 	
 
 }

@@ -1,3 +1,4 @@
+
     create table `administrator` (
        `id` integer not null,
         `version` integer not null,
@@ -5,7 +6,7 @@
         primary key (`id`)
     ) engine=InnoDB;
 
-  create table `advertisement` (
+    create table `advertisement` (
        `id` integer not null,
         `version` integer not null,
         `creation_moment` datetime(6),

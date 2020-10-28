@@ -1,3 +1,4 @@
+
     alter table `administrator` 
        drop 
        foreign key FK_2a5vcjo3stlfcwadosjfq49l1;
@@ -23,6 +24,8 @@
        foreign key FK_b1gwnjqm6ggy9yuiqm0o4rlmd;
 
     drop table if exists `administrator`;
+
+    drop table if exists `advertisement`;
 
     drop table if exists `anonymous`;
 
