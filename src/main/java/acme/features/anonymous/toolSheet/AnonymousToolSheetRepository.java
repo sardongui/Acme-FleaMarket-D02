@@ -12,7 +12,7 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AnonymousToolSheetRepository extends AbstractRepository {
 
-	@Query("Select t from ToolSheet t group by m.providerName")
+	@Query("Select t from ToolSheet t group by t.providerName")
 	Collection<ToolSheet> findMany();
 
 	@Query("select t from ToolSheet t where t.id =?1")
