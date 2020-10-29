@@ -12,7 +12,7 @@
 
 master.banner.background = #FFE97F 
 
-﻿# master.welcome ##############################################################
+# master.welcome ##############################################################
 
 master.welcome.title = ¡Bienvenidos!
 master.welcome.text = \
@@ -73,9 +73,9 @@ master.menu.provider.favourite-link = Enlace favorito
 master.menu.consumer = Consumidor
 master.menu.consumer.favourite-link = Enlace favorito
 
-
 master.menu.anonymous.list-new = Novedades
 
+master.menu.anonymous.list-tool-sheet = Hojas de herramientas
 master.menu.anonymous.list-material-sheet = Hojas de inventario
 
 # master.menu.user-account ####################################################
@@ -87,7 +87,7 @@ master.menu.user-account.become-provider = Hazte proveedor
 master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
 
-﻿# master.footer ###############################################################
+# master.footer ###############################################################
 
 master.footer.title.about = Nosotros
 master.footer.label.company = La empresa

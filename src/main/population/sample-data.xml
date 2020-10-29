@@ -71,7 +71,7 @@
 		<property name="discounts" value="LARGE"/>
 		<property name="item" value="7"/>
 	</bean>
-  
+
 	<!-- Suggestions -->
 	<bean id="Suggestion01" class="acme.entities.suggestions.Suggestion">
 		<property name="title" value="Suggestion 01"/>

@@ -32,6 +32,8 @@
       <acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.anonymous.list-new" action="/anonymous/new/list" />
 			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.anonymous.list-tool-sheet" action="/anonymous/tool-sheet/list" />
+      <acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.anonymous.list-material-sheet" action="/anonymous/material-sheet/list" />
 		</acme:menu-option>
 		

@@ -44,6 +44,8 @@ master.menu.anonymous.list-new = List of News
 
 master.menu.anonymous.list-material-sheet = Material sheets
 
+master.menu.anonymous.list-tool-sheet = Tool sheets
+
 # master.menu.authenticated ###################################################
 
 master.menu.authenticated = Authenticated
