@@ -25,6 +25,8 @@
 
     drop table if exists `administrator`;
 
+    drop table if exists `advertisement`;
+
     drop table if exists `anonymous`;
 
     drop table if exists `authenticated`;

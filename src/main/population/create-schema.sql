@@ -5,6 +5,18 @@
         `user_account_id` integer,
         primary key (`id`)
     ) engine=InnoDB;
+    
+    create table `advertisement` (
+       `id` integer not null,
+        `version` integer not null,
+        `creation_moment` datetime(6),
+        `discounts` varchar(255),
+        `display_period` datetime(6),
+        `picture` varchar(255),
+        `text` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
 
     create table `anonymous` (
        `id` integer not null,
@@ -28,7 +40,7 @@
         `sector` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
-
+    
     create table `customisation` (
        `id` integer not null,
         `version` integer not null,
