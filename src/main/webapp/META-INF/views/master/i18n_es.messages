@@ -30,17 +30,16 @@ master.menu.sign-out = Salir
 
 master.menu.anonymous = Anónimo
 master.menu.anonymous.favourite-link = Enlace favorito
-
 master.menu.anonymous.favourite-link-donaire = Enlace favorito Donaire
 master.menu.anonymous.favourite-link-martinez = Enlace favorito Martínez
 
 master.menu.anonymous.list-donaire-bulletin = Boletín Donaire
 master.menu.anonymous.create-donaire-bulletin = Publicar en boletín Donaire
-
 master.menu.anonymous.list-martinez-bulletin = Boletín Martínez
 master.menu.anonymous.create-martinez-bulletin = Publicar en boletín Martínez
-
 master.menu.anonymous.list-new = Novedades
+master.menu.anonymous.list-material-sheet = Hojas de inventario
+master.menu.anonymous.list-tool-sheet = Hojas de herramientas
 
 # master.menu.authenticated ###################################################
 
@@ -48,6 +47,8 @@ master.menu.authenticated = Autenticado
 master.menu.authenticated.list-suggestion = Lista de sugerencias
 master.menu.authenticated.list-figment = Lista de productos
 master.menu.authenticated.list-new = Lista de novedades
+master.menu.authenticated.list-material-sheet =Hojas de inventario
+master.menu.authenticated.list-tool-sheet = Hojas de herramientas
 
 # master.menu.administrator ###################################################
 
@@ -67,16 +68,16 @@ master.menu.provider.favourite-link = Enlace favorito
 
 master.menu.consumer = Consumidor
 master.menu.consumer.favourite-link = Enlace favorito
-master.menu.anonymous.favourite-link-donaire = Enlace favorito de Donaire
-master.menu.anonymous.favourite-link-martinez = Enlace favorito de Martinez
+master.menu.consumer.favourite-link-donaire = Enlace favorito de Donaire
+master.menu.consumer.favourite-link-martinez = Enlace favorito de Martinez
 
-master.menu.anonymous.list-donaire-bulletin = Boletín de Donaire
-master.menu.anonymous.create-donaire-bulletin = Publicar en boletín de Donaire
-
-master.menu.anonymous.list-martinez-bulletin = Boletín de Martinez
-master.menu.anonymous.create-martinez-bulletin = Publicar en boletín de Martinez
-
-master.menu.anonymous.list-new = Novedades
+master.menu.consumer.list-donaire-bulletin = Boletín de Donaire
+master.menu.consumer.create-donaire-bulletin = Publicar en boletín de Donaire
+master.menu.consumer.list-martinez-bulletin = Boletín de Martinez
+master.menu.consumer.create-martinez-bulletin = Publicar en boletín de Martinez
+master.menu.consumer.list-new = Novedades
+master.menu.consumer.list-material-sheet =Hojas de inventario
+master.menu.consumer.list-tool-sheet = Hojas de herramientas
 
 # master.menu.user-account ####################################################
 

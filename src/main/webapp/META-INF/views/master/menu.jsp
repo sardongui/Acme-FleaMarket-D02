@@ -36,7 +36,8 @@
 			<acme:menu-suboption code="master.menu.authenticated.list-suggestion" action="/authenticated/suggestion/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.list-figment" action="/authenticated/figment/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.list-new" action="/authenticated/new/list"/>
-
+			<acme:menu-suboption code="master.menu.authenticated.list-material-sheet" action="/authenticated/material-sheet/list"/>
+			<acme:menu-suboption code="master.menu.authenticated.list-tool-sheet" action="/authenticated/tool-sheet/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
