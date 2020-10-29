@@ -12,7 +12,7 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AnonymousMaterialSheetRepository extends AbstractRepository {
 
-	@Query("Select m from MaterialSheet m group by m.providerName order by m.rating DESC")
+	@Query("Select m from MaterialSheet m group by m.providerName")
 	Collection<MaterialSheet> findMany();
 
 	@Query("select m from MaterialSheet m where m.id =?1")
