@@ -51,6 +51,7 @@
 		<property name="discounts" value="AVERAGE"/>
 		<property name="item" value="5"/>
 		</bean>
+  
 	<bean id="Advertisement03" class="acme.entities.advertisements.Advertisement">
 		<property name="picture" value="https://ar.pinterest.com/pin/833940055989345675/"/>
 		<property name="title" value="Advertisement 3"/>
@@ -60,6 +61,7 @@
 		<property name="discounts" value="AVERAGE"/>
 		<property name="item" value="4"/>
 	</bean>
+  
 	<bean id="Advertisement04" class="acme.entities.advertisements.Advertisement">
 		<property name="picture" value="https://ar.pinterest.com/pin/833940055989345675/"/>
 		<property name="title" value="Advertisement 4"/>
@@ -69,7 +71,7 @@
 		<property name="discounts" value="LARGE"/>
 		<property name="item" value="7"/>
 	</bean>
-
+  
 	<!-- Suggestions -->
 	<bean id="Suggestion01" class="acme.entities.suggestions.Suggestion">
 		<property name="title" value="Suggestion 01"/>
@@ -143,7 +145,7 @@
 	<!-- Material Sheets -->
 	<bean id="materialSheet01" class="acme.entities.materialSheets.MaterialSheet">
 		<property name="title" value="Material Sheet 1"/>
-		<property name="description" value="Esto es Nuna hoja de inventario de ejemplo (1)"/>
+		<property name="description" value="Esto es una hoja de inventario de ejemplo (1)"/>
 		<property name="providerName" value="Provider 1"/>
 		<property name="providerHomePage" value="https://www.provider1.com"/>
 		<property name="rating" value="3"/>

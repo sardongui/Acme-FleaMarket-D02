@@ -31,6 +31,8 @@
 			<acme:menu-suboption code="master.menu.anonymous.list-advertisement" action="/anonymous/advertisement/list"/>
       <acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.anonymous.list-new" action="/anonymous/new/list" />
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.anonymous.list-material-sheet" action="/anonymous/material-sheet/list" />
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
