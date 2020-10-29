@@ -6,6 +6,10 @@ src/main/population/create-schema.sql
 src/main/population/drop-schema.sql
 src/main/population/entity-map.properties
 
+./src/main/population/create-schema.sql
+./src/main/population/drop-schema.sql
+./src/main/population/entity-map.properties
+
 ### STS ###
 .apt_generated
 .classpath
