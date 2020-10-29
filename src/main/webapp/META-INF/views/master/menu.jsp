@@ -28,20 +28,31 @@
 			<acme:menu-suboption code="master.menu.anonymous.list-martinez-bulletin" action="/anonymous/martinez-bulletin/list" />
 			<acme:menu-suboption code="master.menu.anonymous.create-martinez-bulletin" action="/anonymous/martinez-bulletin/create" />
 			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.anonymous.list-advertisement" action="/anonymous/advertisement/list"/>
+      <acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.anonymous.list-new" action="/anonymous/new/list" />
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.anonymous.list-tool-sheet" action="/anonymous/tool-sheet/list" />
-			
+      <acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.anonymous.list-material-sheet" action="/anonymous/material-sheet/list" />
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
 			<acme:menu-suboption code="master.menu.authenticated.list-suggestion" action="/authenticated/suggestion/list"/>
 			<acme:menu-suboption code="master.menu.authenticated.list-figment" action="/authenticated/figment/list"/>
-
+			<acme:menu-suboption code="master.menu.authenticated.list-new" action="/authenticated/new/list"/>
+      <acme:menu-suboption code="master.menu.authenticated.list-advertisement" action="/authenticated/advertisement/list"/>
 		</acme:menu-option>
 
 		<acme:menu-option code="master.menu.administrator" access="hasRole('Administrator')">
 			<acme:menu-suboption code="master.menu.administrator.user-accounts" action="/administrator/user-account/list"/>
+			<acme:menu-suboption code="master.menu.administrator.customisation" action="/administrator/customisation/show"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.list-new" action="/administrator/new/list"/>
+			<acme:menu-separator />
+			<acme:menu-suboption code="master.menu.administrator.chart" action="/administrator/chart/show" />
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.dashboard" action="/administrator/dashboard/show"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
 		</acme:menu-option>
