@@ -121,3 +121,7 @@ master.license.text = \
 	lenguage.  Además, almacenamos un ítem llamado "returnStack" en el almacenamiento \
 	local de su navegador para saber dónde tienen que ir algunos botones.
 	
+# master.custom-errors ##############################################################
+
+master.custom-errors.creditCard.cvv = El CVV debe ser de 3 o 4 dígitos
+	
