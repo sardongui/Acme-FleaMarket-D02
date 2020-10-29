@@ -25,11 +25,15 @@
 
     drop table if exists `administrator`;
 
+    drop table if exists `advertisement`;
+
     drop table if exists `anonymous`;
 
     drop table if exists `authenticated`;
 
     drop table if exists `consumer`;
+
+    drop table if exists `customisation`;
 
     drop table if exists `donaire_bulletin`;
 
@@ -52,3 +56,4 @@
     drop table if exists `user_account`;
 
     drop table if exists `hibernate_sequence`;
+

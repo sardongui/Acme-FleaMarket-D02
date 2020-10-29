@@ -30,7 +30,48 @@
 		<property name="description" value="Donde las críticas constructivas, brillan por su ausencia."/>
 		<property name="moment" value="2020/10/22 17:30"/>
 	</bean>
+
+	<!-- Advertisements -->
+	<bean id="Advertisement01" class="acme.entities.advertisements.Advertisement">
+		<property name="picture" value="https://ar.pinterest.com/pin/833940055989345675/"/>
+		<property name="title" value="Advertisement 1"/>
+		<property name="creationMoment" value="2020/07/21 18:00"/>
+		<property name="displayPeriod" value="2020/12/20 17:00"/>
+		<property name="text" value="Text Advertisement 1"/>
+		<property name="discounts" value="SMALL"/>
+		<property name="item" value="3"/>
+	</bean>
 	
+	<bean id="Advertisement02" class="acme.entities.advertisements.Advertisement">
+		<property name="picture" value="https://ar.pinterest.com/pin/833940055989345675/"/>
+		<property name="title" value="Advertisement 2"/>
+		<property name="creationMoment" value="2020/10/21 18:00"/>
+		<property name="displayPeriod" value="2020/12/20 17:00"/>
+		<property name="text" value="Text Advertisement 2"/>
+		<property name="discounts" value="AVERAGE"/>
+		<property name="item" value="5"/>
+		</bean>
+  
+	<bean id="Advertisement03" class="acme.entities.advertisements.Advertisement">
+		<property name="picture" value="https://ar.pinterest.com/pin/833940055989345675/"/>
+		<property name="title" value="Advertisement 3"/>
+		<property name="creationMoment" value="2020/04/02 02:00"/>
+		<property name="displayPeriod" value="2020/10/20 22:30"/>
+		<property name="text" value="Text Advertisement 3"/>
+		<property name="discounts" value="AVERAGE"/>
+		<property name="item" value="4"/>
+	</bean>
+  
+	<bean id="Advertisement04" class="acme.entities.advertisements.Advertisement">
+		<property name="picture" value="https://ar.pinterest.com/pin/833940055989345675/"/>
+		<property name="title" value="Advertisement 4"/>
+		<property name="creationMoment" value="2020/10/12 13:02"/>
+		<property name="displayPeriod" value="2020/11/10 7:00"/>
+		<property name="text" value="Text Advertisement 4"/>
+		<property name="discounts" value="LARGE"/>
+		<property name="item" value="7"/>
+	</bean>
+  
 	<!-- Suggestions -->
 	<bean id="Suggestion01" class="acme.entities.suggestions.Suggestion">
 		<property name="title" value="Suggestion 01"/>
@@ -60,12 +101,12 @@
 
 	<!-- News -->
 	<bean id="new01" class="acme.entities.news.New">
-		<property name="category" value="Categoria-1"/>
+		<property name="category" value="Info"/>
 		<property name="picture" value="https://png.pngtree.com/picture-new1.jpg"/>
 		<property name="title" value="Ejemplo1"/>
 		<property name="moment" value="2020/10/25 10:21"/>
 		<property name="deadline" value="2020/11/20 23:00"/>
-		<property name="body" value="Esto es una noticia de ejemplo (1)"/>
+		<property name="body" value="Esto es una novedad de ejemplo (1)"/>
 		<property name="relatedNews">
 			<list>
 			</list>
@@ -73,12 +114,12 @@
 	</bean>
 	
 	<bean id="new02" class="acme.entities.news.New">
-		<property name="category" value="Categoria-1"/>
+		<property name="category" value="Warning"/>
 		<property name="picture" value="https://png.pngtree.com/picture-new2.jpg"/>
 		<property name="title" value="Ejemplo2"/>
 		<property name="moment" value="2020/10/25 10:25"/>
 		<property name="deadline" value="2020/11/20 23:00"/>
-		<property name="body" value="Esto es una noticia de ejemplo (2)"/>
+		<property name="body" value="Esto es una novedad de ejemplo (2)"/>
 		<property name="relatedNews">
 			<list>
 				<value>www.related-new1.com</value>
@@ -88,12 +129,12 @@
 	</bean>
 	
 	<bean id="new03" class="acme.entities.news.New">
-		<property name="category" value="Categoria-2"/>
+		<property name="category" value="Info"/>
 		<property name="picture" value="https://png.pngtree.com/picture-new3.jpg"/>
 		<property name="title" value="Ejemplo3"/>
 		<property name="moment" value="2020/10/22 12:00"/>
 		<property name="deadline" value="2020/10/23 23:00"/>
-		<property name="body" value="Esto es una noticia de ejemplo (3)"/>
+		<property name="body" value="Esto es una novedad de ejemplo (3)"/>
 		<property name="relatedNews">
 			<list>
 				<value>www.related-new3.com</value>
@@ -151,4 +192,11 @@
 		<property name="rating" value="2"/>
 	</bean>
 
+	<!-- Customisation -->
+	<bean id="Customisation" class="acme.entities.customisations.Customisation">
+		<property name="spamwords" value="sex,hard core,viagra,cialis,nigeria,you've won, million dollar,sexo,duro,has ganado,millon de dolares"/>
+		<property name="threshold" value="2.50"/>
+		<property name="newsCategories" value="Breaking news,Important news,Warning,Information"/>
+		<property name="itemsCategories" value="Toilette,Kitchen,Living room,Sleeping room,Garden"/>
+	</bean>
 </beans>
