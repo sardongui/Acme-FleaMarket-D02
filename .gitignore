@@ -2,9 +2,9 @@
 !.mvn/wrapper/maven-wrapper.jar
 
 ### Population Scripts ###
-src/main/population/create-schema.sql
-src/main/population/drop-schema.sql
-src/main/population/entity-map.properties
+/src/main/population/create-schema.sql
+/src/main/population/drop-schema.sql
+/src/main/population/entity-map.properties
 
 ./src/main/population/create-schema.sql
 ./src/main/population/drop-schema.sql
@@ -39,3 +39,10 @@ mvnw
 
 mvnw\.cmd
 /bin/
+/target/acme-fleamarket-1.0/
+/target/classes/
+/target/generated-sources/
+/target/m2e-wtp/
+/target/maven-archiver/
+/target/maven-status/
+
