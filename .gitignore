@@ -46,3 +46,4 @@ mvnw\.cmd
 /target/maven-archiver/
 /target/maven-status/
 
+/target/

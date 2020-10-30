@@ -296,4 +296,189 @@ m2=*
 has v</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>14</x>
+      <y>399</y>
+      <w>175</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+New
+--
++ body: String {NotBlank}
++ picture: String {NotBlank, URL}
++ category: String {NotBlank}
++ title: String {NotBlank}
++ moment: Date {Past}
++ deadline: Date 
++ relatedNews: String [0..*]
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>203</x>
+      <y>413</y>
+      <w>189</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Figment
+--
++ title: String {NotBlank}
++ creationMoment: Date {Past}
++ nameInventor: String {NotBlank} 
++ description: String {NotBlank}
++ minMoney: Money {NotNull, Valid}
++ maxMoney: Money {NotNull, Valid}
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>406</x>
+      <y>413</y>
+      <w>203</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+MaterialSheet
+--
++ title: String {NotBlank}
++ description: String {NotBlank}
++ providerName: String {NotBlank}
++ providerHomePage: String {NotBlank, URL}
++ rating: int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>203</x>
+      <y>294</y>
+      <w>189</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Suggestion
+--
++ title: String {NotBlank}
++ creationMoment: Date {Past} 
++ description: String {NotBlank}
++ email: String {NotBlank, URL}
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>623</x>
+      <y>413</y>
+      <w>203</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+ToolSheet
+--
++ title: String {NotBlank}
++ description: String {NotBlank}
++ providerName: String {NotBlank}
++ providerHomePage: String {NotBlank, URL}
++ rating: int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>532</y>
+      <w>196</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+CreditCard
+--
++ holderName: String {NotBlank}
++ number: String {NotBlank} 
++ brand: String {NotBlank}
++ month: int {NotNull}
++ year: int {NotNull,Range(min=0,max=12}
++ cvv: String {NotBlank}
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>413</x>
+      <y>532</y>
+      <w>189</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Advertisement
+--
++ title: String {NotBlank}
++ creationMoment: Date {Past}
++ picture: String {NotBlank, URL} 
++ displayPeriod: Date {NotNull}
++ text: String {NotBlank}
++ discounts: String {NotBlank}
++ item: double 
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>14</x>
+      <y>532</y>
+      <w>175</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Banner
+--
++ slogan: String {NotBlank}
++ picture: String {NotBlank, URL}
++ target: String {NotBlank, URL}
++ creditCard: CreditCard {Valid}
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>616</x>
+      <y>539</y>
+      <w>175</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Customisation
+--
++ spamwords: String {NotBlank}
++ threshold: double {NotBlank}
++ newsCategories: String {NotBlank}
++ itemsCategories: String {NotBlank}
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>

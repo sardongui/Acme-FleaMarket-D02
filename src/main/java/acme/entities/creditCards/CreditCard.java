@@ -9,6 +9,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.CreditCardNumber;
+import org.hibernate.validator.constraints.Range;
 
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
@@ -32,8 +33,7 @@ public class CreditCard extends DomainEntity {
 	private String				brand;
 
 	@NotNull
-	@Min(value = 0)
-	@Max(value = 12)
+	@Range(min=0, max=12)
 	private Integer				month;
 
 	@NotNull
