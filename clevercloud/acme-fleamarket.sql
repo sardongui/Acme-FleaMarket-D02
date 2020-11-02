@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.17, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.20, for Win64 (x86_64)
 --
 -- Host: localhost    Database: acme-fleamarket
 -- ------------------------------------------------------
--- Server version	8.0.17
+-- Server version	8.0.20
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -23,9 +23,9 @@ DROP TABLE IF EXISTS `administrator`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `administrator` (
-  `id` int(11) NOT NULL,
-  `version` int(11) NOT NULL,
-  `user_account_id` int(11) DEFAULT NULL,
+  `id` int NOT NULL,
+  `version` int NOT NULL,
+  `user_account_id` int DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `FK_2a5vcjo3stlfcwadosjfq49l1` (`user_account_id`),
   CONSTRAINT `FK_2a5vcjo3stlfcwadosjfq49l1` FOREIGN KEY (`user_account_id`) REFERENCES `user_account` (`id`)
@@ -50,8 +50,8 @@ DROP TABLE IF EXISTS `advertisement`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `advertisement` (
-  `id` int(11) NOT NULL,
-  `version` int(11) NOT NULL,
+  `id` int NOT NULL,
+  `version` int NOT NULL,
   `creation_moment` datetime(6) DEFAULT NULL,
   `discounts` varchar(255) DEFAULT NULL,
   `display_period` datetime(6) DEFAULT NULL,
@@ -81,9 +81,9 @@ DROP TABLE IF EXISTS `anonymous`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `anonymous` (
-  `id` int(11) NOT NULL,
-  `version` int(11) NOT NULL,
-  `user_account_id` int(11) DEFAULT NULL,
+  `id` int NOT NULL,
+  `version` int NOT NULL,
+  `user_account_id` int DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `FK_6lnbc6fo3om54vugoh8icg78m` (`user_account_id`),
   CONSTRAINT `FK_6lnbc6fo3om54vugoh8icg78m` FOREIGN KEY (`user_account_id`) REFERENCES `user_account` (`id`)
@@ -108,9 +108,9 @@ DROP TABLE IF EXISTS `authenticated`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `authenticated` (
-  `id` int(11) NOT NULL,
-  `version` int(11) NOT NULL,
-  `user_account_id` int(11) DEFAULT NULL,
+  `id` int NOT NULL,
+  `version` int NOT NULL,
+  `user_account_id` int DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `FK_h52w0f3wjoi68b63wv9vwon57` (`user_account_id`),
   CONSTRAINT `FK_h52w0f3wjoi68b63wv9vwon57` FOREIGN KEY (`user_account_id`) REFERENCES `user_account` (`id`)
@@ -135,12 +135,12 @@ DROP TABLE IF EXISTS `banner`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `banner` (
-  `id` int(11) NOT NULL,
-  `version` int(11) NOT NULL,
+  `id` int NOT NULL,
+  `version` int NOT NULL,
   `picture` varchar(255) DEFAULT NULL,
   `slogan` varchar(255) DEFAULT NULL,
   `target` varchar(255) DEFAULT NULL,
-  `credit_card_id` int(11) DEFAULT NULL,
+  `credit_card_id` int DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `FKr19baq0bri0akndc7ruwhngy4` (`credit_card_id`),
   CONSTRAINT `FKr19baq0bri0akndc7ruwhngy4` FOREIGN KEY (`credit_card_id`) REFERENCES `credit_card` (`id`)
@@ -164,9 +164,9 @@ DROP TABLE IF EXISTS `consumer`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `consumer` (
-  `id` int(11) NOT NULL,
-  `version` int(11) NOT NULL,
-  `user_account_id` int(11) DEFAULT NULL,
+  `id` int NOT NULL,
+  `version` int NOT NULL,
+  `user_account_id` int DEFAULT NULL,
   `company` varchar(255) DEFAULT NULL,
   `sector` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
@@ -192,14 +192,14 @@ DROP TABLE IF EXISTS `credit_card`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `credit_card` (
-  `id` int(11) NOT NULL,
-  `version` int(11) NOT NULL,
+  `id` int NOT NULL,
+  `version` int NOT NULL,
   `brand` varchar(255) DEFAULT NULL,
   `cvv` varchar(255) DEFAULT NULL,
   `holder_name` varchar(255) DEFAULT NULL,
-  `month` int(11) DEFAULT NULL,
+  `month` int DEFAULT NULL,
   `number` varchar(255) DEFAULT NULL,
-  `year` int(11) DEFAULT NULL,
+  `year` int DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -221,8 +221,8 @@ DROP TABLE IF EXISTS `customisation`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `customisation` (
-  `id` int(11) NOT NULL,
-  `version` int(11) NOT NULL,
+  `id` int NOT NULL,
+  `version` int NOT NULL,
   `items_categories` varchar(255) DEFAULT NULL,
   `news_categories` varchar(255) DEFAULT NULL,
   `spamwords` varchar(255) DEFAULT NULL,
@@ -249,8 +249,8 @@ DROP TABLE IF EXISTS `donaire_bulletin`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `donaire_bulletin` (
-  `id` int(11) NOT NULL,
-  `version` int(11) NOT NULL,
+  `id` int NOT NULL,
+  `version` int NOT NULL,
   `author` varchar(255) DEFAULT NULL,
   `moment` datetime(6) DEFAULT NULL,
   `text` varchar(255) DEFAULT NULL,
@@ -276,8 +276,8 @@ DROP TABLE IF EXISTS `figment`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `figment` (
-  `id` int(11) NOT NULL,
-  `version` int(11) NOT NULL,
+  `id` int NOT NULL,
+  `version` int NOT NULL,
   `creation_moment` datetime(6) DEFAULT NULL,
   `description` varchar(255) DEFAULT NULL,
   `max_money_amount` double DEFAULT NULL,
@@ -308,7 +308,7 @@ DROP TABLE IF EXISTS `hibernate_sequence`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `hibernate_sequence` (
-  `next_val` bigint(20) DEFAULT NULL
+  `next_val` bigint DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -330,8 +330,8 @@ DROP TABLE IF EXISTS `martinez_bulletin`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `martinez_bulletin` (
-  `id` int(11) NOT NULL,
-  `version` int(11) NOT NULL,
+  `id` int NOT NULL,
+  `version` int NOT NULL,
   `description` varchar(255) DEFAULT NULL,
   `moment` datetime(6) DEFAULT NULL,
   `web` varchar(255) DEFAULT NULL,
@@ -345,7 +345,7 @@ CREATE TABLE `martinez_bulletin` (
 
 LOCK TABLES `martinez_bulletin` WRITE;
 /*!40000 ALTER TABLE `martinez_bulletin` DISABLE KEYS */;
-INSERT INTO `martinez_bulletin` VALUES (7,0,'Donde las críticas constructivas, brillan por su ausencia.','2020-10-22 15:30:00.000000','Twitter');
+INSERT INTO `martinez_bulletin` VALUES (7,0,'Donde las críticas constructivas, brillan por su ausencia.','2020-10-22 15:30:00.000000','https://twitter.com/');
 /*!40000 ALTER TABLE `martinez_bulletin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -357,12 +357,12 @@ DROP TABLE IF EXISTS `material_sheet`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `material_sheet` (
-  `id` int(11) NOT NULL,
-  `version` int(11) NOT NULL,
+  `id` int NOT NULL,
+  `version` int NOT NULL,
   `description` varchar(255) DEFAULT NULL,
   `provider_home_page` varchar(255) DEFAULT NULL,
   `provider_name` varchar(255) DEFAULT NULL,
-  `rating` int(11) DEFAULT NULL,
+  `rating` int DEFAULT NULL,
   `title` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -386,8 +386,8 @@ DROP TABLE IF EXISTS `new`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `new` (
-  `id` int(11) NOT NULL,
-  `version` int(11) NOT NULL,
+  `id` int NOT NULL,
+  `version` int NOT NULL,
   `body` varchar(255) DEFAULT NULL,
   `category` varchar(255) DEFAULT NULL,
   `deadline` datetime(6) DEFAULT NULL,
@@ -416,7 +416,7 @@ DROP TABLE IF EXISTS `new_related_news`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `new_related_news` (
-  `new_id` int(11) NOT NULL,
+  `new_id` int NOT NULL,
   `related_news` varchar(255) DEFAULT NULL,
   KEY `FKekvcmka1939ggq2mk62n8khap` (`new_id`),
   CONSTRAINT `FKekvcmka1939ggq2mk62n8khap` FOREIGN KEY (`new_id`) REFERENCES `new` (`id`)
@@ -441,9 +441,9 @@ DROP TABLE IF EXISTS `provider`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `provider` (
-  `id` int(11) NOT NULL,
-  `version` int(11) NOT NULL,
-  `user_account_id` int(11) DEFAULT NULL,
+  `id` int NOT NULL,
+  `version` int NOT NULL,
+  `user_account_id` int DEFAULT NULL,
   `company` varchar(255) DEFAULT NULL,
   `sector` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
@@ -469,8 +469,8 @@ DROP TABLE IF EXISTS `suggestion`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `suggestion` (
-  `id` int(11) NOT NULL,
-  `version` int(11) NOT NULL,
+  `id` int NOT NULL,
+  `version` int NOT NULL,
   `creation_moment` datetime(6) DEFAULT NULL,
   `description` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
@@ -497,12 +497,12 @@ DROP TABLE IF EXISTS `tool_sheet`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tool_sheet` (
-  `id` int(11) NOT NULL,
-  `version` int(11) NOT NULL,
+  `id` int NOT NULL,
+  `version` int NOT NULL,
   `description` varchar(255) DEFAULT NULL,
   `provider_home_page` varchar(255) DEFAULT NULL,
   `provider_name` varchar(255) DEFAULT NULL,
-  `rating` int(11) DEFAULT NULL,
+  `rating` int DEFAULT NULL,
   `title` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -526,8 +526,8 @@ DROP TABLE IF EXISTS `user_account`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `user_account` (
-  `id` int(11) NOT NULL,
-  `version` int(11) NOT NULL,
+  `id` int NOT NULL,
+  `version` int NOT NULL,
   `enabled` bit(1) NOT NULL,
   `identity_email` varchar(255) DEFAULT NULL,
   `identity_name` varchar(255) DEFAULT NULL,
@@ -545,7 +545,7 @@ CREATE TABLE `user_account` (
 
 LOCK TABLES `user_account` WRITE;
 /*!40000 ALTER TABLE `user_account` DISABLE KEYS */;
-INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$gZ446GPovwxlew3fKOUq9uPb5YbLhS/RV48hv/bJvaR80jV63G3CG','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$X8BPPqfWFhFAfwmOpMwYV.wgDrbkmaY7KwfDIAPWH5H4l85MlIVM2','administrator');
+INSERT INTO `user_account` VALUES (1,0,_binary '\0','john.doe@acme.com','John','Doe','$2a$05$Z7./vKCP8tjqHKb0dhrzT.1shsGML.a5qea8j59290EQoVMoqy9wq','anonymous'),(3,0,_binary '','administrator@acme.com','Administrator','Acme.com','$2a$05$Zo/0EZEdLt9Nxu456EfrcO.WichA9uiA1cASgAi8QVEXZJGRVXdo.','administrator');
 /*!40000 ALTER TABLE `user_account` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -558,4 +558,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-10-29 14:32:45
+-- Dump completed on 2020-11-02 18:08:16

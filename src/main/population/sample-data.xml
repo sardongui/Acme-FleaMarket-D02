@@ -26,7 +26,7 @@
 	
 	<!-- MartinezBulletin -->
 	<bean id="MartinezBulletin01" class="acme.entities.bulletins.MartinezBulletin">
-		<property name="web" value="Twitter"/>
+		<property name="web" value="https://twitter.com/"/>
 		<property name="description" value="Donde las críticas constructivas, brillan por su ausencia."/>
 		<property name="moment" value="2020/10/22 17:30"/>
 	</bean>
