@@ -39,8 +39,8 @@ master.menu.anonymous.list-martinez-bulletin = Martinez's bulletin
 master.menu.anonymous.create-martinez-bulletin = Publish in Martinez's bulletin
 master.menu.anonymous.list-advertisement = List of Advertisement
 master.menu.anonymous.list-new = List of News
-master.menu.anonymous.list-material-sheet = Material sheets
-master.menu.anonymous.list-tool-sheet = Tool sheets
+master.menu.anonymous.list-material-sheet = List of Material sheets
+master.menu.anonymous.list-tool-sheet = List of Tool sheets
 
 # master.menu.authenticated ###################################################
 
@@ -50,8 +50,8 @@ master.menu.authenticated.list-suggestion = List of Suggestion
 master.menu.authenticated.list-figment = List of Figments
 master.menu.authenticated.list-advertisement = List of Advertisement
 master.menu.authenticated.list-new = List of News
-master.menu.authenticated.list-material-sheet = Material sheets
-master.menu.authenticated.list-tool-sheet = Tool sheets
+master.menu.authenticated.list-material-sheet = List of Material sheets
+master.menu.authenticated.list-tool-sheet = List of Tool sheets
 
 # master.menu.administrator ###################################################
 
@@ -60,7 +60,7 @@ master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.customisation = Customisation 
 master.menu.administrator.shutdown = Shut down
 
-master.menu.administrator.list-new = News
+master.menu.administrator.list-new = List of News
 
 master.menu.administrator.dashboard = Dashboard
 master.menu.administrator.chart = Chart

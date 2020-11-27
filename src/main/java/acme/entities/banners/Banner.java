@@ -2,7 +2,6 @@
 package acme.entities.banners;
 
 import javax.persistence.Entity;
-import javax.persistence.ManyToOne;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 
@@ -34,7 +33,7 @@ public class Banner extends DomainEntity {
 	private String				target;
 
 	@Valid
-	@ManyToOne(optional = true)
+	//@ManyToOne(optional = true)
 	private CreditCard			creditCard;
 
 }
